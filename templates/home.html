@@ -1,0 +1,82 @@
+<!-- tut for html -> htmldog.com -->
+<!DOCTYPE html>
+
+<html>
+  
+  <head>
+  
+    <title>Foodie Bot</title>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    {% include 'bootstrap.html'%}
+    <link rel="stylesheet" href="../static/try.css">
+  </head>
+  
+  <body>
+
+    {%include 'nav.html'%}
+    <div class='container'>
+      <h1 class='text-center mt-4'>Foodie Bot</h1>
+    </div>
+    
+    <div>
+      {% include 'banner.html'%}
+    </div>
+    
+    <div class="container">
+      
+      <h2 class='text-center mt-4'>About</h2>
+      
+      <p class='lead'>
+        Foodie Bot provides AI-powered data analytics services to businesses and organizations seeking to derive insights from their data. With advanced machine learning algorithms and natural language processing capabilities, the company is able to analyze large volumes of structured and unstructured data from various sources, such as customer feedback, social media posts, website analytics, and transactional data.
+      </p>
+      
+      <h2 class='text-center mt-2 mb-4'>Features</h2>
+
+        <div class="border-bottom row mt-3 mb-3">
+            <div class="col-4 mb-2">
+                
+            </div>
+          <div class="col-2 mb-2">
+            <div class="border pb-4 pl-4 pr-4 pt-4">
+              <div>
+                <img class="mb-2 ml-2 mr-2 mt-2 text-center" src="static/images1.png" alt="" width="150" height="150">
+              </div>
+                <h4 class="text-center"><a href="/chat">Chatbots</a></h4>
+                <div class="border-top text-center ml-2 mr-2">Get insights about your dataset by asking questions to our chatbot!</div>
+            </div>
+          </div>
+          <!-- <div class="col-2">
+            <a href = "#" type="button" class="btn btn-outline-primary">Apply</a>
+          </div> -->
+          <div class="col-2 mb-2">
+            <div class="border pb-4 pl-4 pr-4 pt-4">
+              <div>
+                <img class="mb-2 pl-2 mr-2 mt-2 text-center" src="static/download.png" alt="" width="150" height="150">
+              </div>
+                <h4 class="text-center"><a href="/insights">Analysis</a></h4>
+                <div class="border-top text-center ml-2 mr-2">Find Visualizations that will give you some valuable insights about the data.</div>
+            </div>
+          </div>
+          <div class="col-4 mb-2">
+                
+          </div>
+        </div>
+      
+    </div>
+
+    <footer>
+
+      <div class='text-center'>
+        
+        <p class="mt-4">{%include 'footer.html'%}</p>
+        
+      </div>
+      
+    </footer>
+    
+  </body>
+  
+</html>
